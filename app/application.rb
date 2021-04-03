@@ -21,6 +21,7 @@ class Application
     elsif req.path.match(/cart/) && @@cart.size > 0
       @@cart.each do |item|
       resp.write "#{item}\n"
+    end
     else
       resp.write "Path Nt Found"
     end
