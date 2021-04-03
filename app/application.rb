@@ -24,7 +24,7 @@ class Application
     end
 
     else
-      resp.write "Path Nt Found"
+      resp.write "Path Not Found"
     end
 
     resp.finish
