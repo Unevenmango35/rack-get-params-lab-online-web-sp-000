@@ -23,6 +23,10 @@ class Application
       resp.write "#{cart_item}\n"
     end
 
+    elsif req.path.match(/add/)
+    search_term = req.params["item"]
+    resp.write handle_add(search_term
+
     else
       resp.write "Path Not Found"
     end
